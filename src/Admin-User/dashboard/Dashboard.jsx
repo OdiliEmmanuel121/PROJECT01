@@ -3,21 +3,20 @@ import './Dashboard.css'
 import { AccountCircle, ConnectedTvRounded, ConnectWithoutContact, ConnectWithoutContactSharp, Search, Share, ShoppingBag } from '@mui/icons-material';
 import Box from '@mui/material/Box';
 import restu1 from '../../assets/restu1.jpg'
-import restu2 from '../../assets/restu2.jpg'
-import restu3 from '../../assets/restu3.webp'
-import food4 from '../../assets/food4.jpg'
-import food3 from '../../assets/food3.jpg'
-import food2 from '../../assets/food2.jpg'
-import food1 from '../../assets/food1.jpg'
-import cartoonfood1 from '../../assets/cartoonfood1.png'
-import drink1 from '../../assets/drink1.jpg'
-import Group78 from '../../assets/Group78.png'
+import vintage1 from '../../assets/vintage1.jpg'
+import vintage2 from '../../assets/vintage2.jpg'
+import vintage3 from '../../assets/vintage3.jpg'
+import vintage4 from '../../assets/vintage4.jpg'
+import vintage5 from '../../assets/vintage5.jpg'
+import vintage6 from '../../assets/vintage6.jpg'
 import Vector1 from '../../assets/Vector1.png'
 import Vector2 from '../../assets/Vector2.png'
 import Vector3 from '../../assets/Vector3.png'
+import Group78 from '../../assets/Group78.png'
 
 
-const dashboard = () => {
+
+const Dashboard = () => {
   return (
     <div className='dashboardContainer'>
       <div className='FirstSection'>
@@ -54,7 +53,7 @@ const dashboard = () => {
         <Box className='BoxSection' sx={{ py: 3 }}>
           <div className='cardBox'>
             <div className="card1">
-              <img src={restu1} alt="Beans and Plantain" className="card-image1" />
+              <img src={vintage1} alt="Beans and Plantain" className="card-image1" />
               <div className="card-content1">
                 <div className="card-title1">
                   <h3>Thick Vintage</h3>
@@ -73,7 +72,7 @@ const dashboard = () => {
 
           <div className='cardBox'>
             <div className="card2">
-              <img src={restu2} alt="Beans and Plantain" className="card-image2" />
+              <img src={vintage2} alt="Beans and Plantain" className="card-image2" />
               <div className="card-content2">
                 <div className="card-title2">
                   <h3>Thick Vintage</h3>
@@ -89,7 +88,7 @@ const dashboard = () => {
 
           <div className='cardBox'>
             <div className="card3">
-              <img src={restu3} alt="Beans and Plantain" className="card-image3" />
+              <img src={vintage3} alt="Beans and Plantain" className="card-image3" />
               <div className="card-content3">
                 <div className="card-title3">
                   <h3>Thick Vintage</h3>
@@ -108,7 +107,7 @@ const dashboard = () => {
         <Box className='BoxSection2' sx={{ py: 3 }}>
           <div className='cardBox'>
             <div className="card1">
-              <img src={food4} alt="Beans and Plantain" className="card-image4" />
+              <img src={vintage4} alt="Beans and Plantain" className="card-image4" />
               <div className="card-content1">
                 <div className="card-title1">
                   <h3>Thick Vintage</h3>
@@ -124,7 +123,7 @@ const dashboard = () => {
 
           <div className='cardBox'>
             <div className="card2">
-              <img src={drink1} alt="Beans and Plantain" className="card-image5" />
+              <img src={vintage5} alt="Beans and Plantain" className="card-image5" />
               <div className="card-content2">
                 <div className="card-title2">
                   <h3>Thick Vintage</h3>
@@ -140,7 +139,7 @@ const dashboard = () => {
 
           <div className='cardBox'>
             <div className="card3">
-              <img src={food2} alt="Beans and Plantain" className="card-image6" />
+              <img src={vintage6} alt="Beans and Plantain" className="card-image6" />
               <div className="card-content3">
                 <div className="card-title3">
                   <h3>Thick Vintage</h3>
@@ -160,4 +159,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard

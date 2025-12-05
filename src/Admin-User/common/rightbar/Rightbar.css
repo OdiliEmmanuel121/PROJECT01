@@ -2,8 +2,18 @@
     width: 25%;
     min-height: 100vh;
     background-color: rgb(255, 253, 253);
-    padding: 20px 0;
-    box-shadow: 4px 0 5px rgba(30, 10, 0, 0.1);
+    padding: 10px 0;
+    /* box-shadow: 4px 0 5px rgba(30, 10, 0, 0.1); */
+    box-shadow: 4px 0px 7px rgba(30, 10, 4, 10);
+    padding-top: 30px;
+    /* --- FIX: Added position: fixed to keep the bar visible during scroll --- */
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* You might need to add z-index if it overlaps with other elements */
+    /* z-index: 10; */
+
+
 
 }
 
@@ -150,4 +160,131 @@
     height: 70px;
     margin-top: 95px;
     margin-left: 27px;
+}
+
+/* --- ORIGINAL DESKTOP STYLES (Keep as base) --- */
+.rightbarContainer {
+    width: 25%;
+    min-height: 100vh;
+    background-color: rgb(255, 253, 253);
+    padding: 10px 0;
+    box-shadow: 4px 0px 7px rgba(30, 10, 4, 10);
+    padding-top: 30px;
+    /* Optional: For mobile, you might want to hide this initially and show it on click */
+}
+
+/* --- MOBILE OVERRIDES (Max Width 768px) --- */
+@media screen and (max-width: 768px) {
+
+    /* 1. Right Bar Container: Make it full width and fixed at the bottom/top */
+    .rightbarContainer {
+        /* Full screen width */
+        width: 100%;
+        /* Minimum height is manageable for a small screen, e.g., 60% of viewport height */
+        min-height: 60vh;
+        /* Position fixed at the bottom, so it acts like a slide-up cart */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        /* Reset box-shadow if needed, or keep the existing one */
+        box-shadow: 0 -4px 7px rgba(30, 10, 4, 0.1);
+        /* Ensure it's above other content */
+        z-index: 100;
+        padding-top: 20px;
+        overflow-y: auto;
+        /* Allow scrolling for many cart items */
+    }
+
+    /* 2. Header/First Item: Adjust margins and remove fixed gaps */
+    .firstItem {
+        margin-left: 15px;
+        margin-right: 15px;
+        /* Allow items to wrap naturally */
+        flex-wrap: wrap;
+        /* Remove fixed large gap */
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    /* 3. Product Card: Make it use full available width and adjust height */
+    .productCard {
+        /* Use 90% of the container width to leave some padding */
+        width: 90%;
+        height: auto;
+        /* Allow height to adjust based on content */
+        margin-left: 5%;
+        /* Center it roughly */
+        margin-right: 5%;
+        padding: 10px;
+        /* Ensure content wraps inside the card */
+        flex-direction: row;
+    }
+
+    /* 4. Food Image: Make it smaller and keep margins tight */
+    .foodImage {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+    }
+
+    /* 5. Card Content: Adjust font size for better mobile fit */
+    .cardContent {
+        margin-left: 10px;
+        font-size: small;
+        /* Use smaller size than 'smaller' */
+    }
+
+    /* 6. Increment/Decrement Area: Adjust internal margins */
+    .IncreDecre {
+        margin-top: 5px;
+        margin-left: 0;
+        margin-right: 0;
+        /* Change to vertical layout if necessary, but horizontal usually works for cart buttons */
+    }
+
+    /* 7. Button Item (Cart Button): Make it full width */
+    .buttonItem {
+        width: 100%;
+        padding: 5px 10px;
+        margin-left: 0;
+    }
+
+    /* 8. Checkout Button: Make it use full width and adjust positioning */
+    .checkoutBotton {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+    }
+
+    /* 9. Card Button (Final Action Button): Make it full width */
+    .card-button20 {
+        width: 100%;
+        /* Adjusted height/padding */
+        height: 40px;
+        line-height: 40px;
+        margin-top: 5px;
+    }
+
+    /* 10. Placeholder Text: Center and adjust */
+    .p1tag {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* 11. Blur Images (Placeholders): Center and resize */
+    .BlurImage1,
+    .RectangleImage {
+        width: 80%;
+        /* Reduce size */
+        margin-left: 10%;
+        /* Center */
+        margin-right: 10%;
+    }
+
+    .RectangleImage {
+        margin-top: 30px;
+    }
 }

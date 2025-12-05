@@ -6,13 +6,14 @@ import Distribution from './Admin-User/distrubution/Distribution'
 import SavedItems from './Admin-User/SavedItems/SavedItems'
 import Saveditemslayout from './Admin-User/dashboard/Dashboardlayout/Saveditemslayout/Saveditemslayout'
 import Collections from './Admin-User/collection/Collections'
-import Collectionslayout from './Admin-User/dashboard/Dashboardlayout/collectionslayout/Collectionslayout'
 import Wallet from './Admin-User/Wallet/Wallet'
-import Walletlayout from './Admin-User/dashboard/Dashboardlayout/walletlayout/Walletlayout'
 import Profile from './Admin-User/Profile/Profile'
 import Profilelayout from './Admin-User/dashboard/Dashboardlayout/profilelayout/Profilelayout'
-import Contactsupport from './Admin-User/contactsupport/Contactsupport'
-import Contactsupportlayout from './Admin-User/dashboard/Dashboardlayout/contactsupportlayout/Contactsupportlayout'
+import Collectionslayout from './Admin-User/dashboard/Dashboardlayout/collectionslayout/collectionslayout'
+import Walletlayout from './Admin-User/dashboard/Dashboardlayout/walletlayout/walletlayout'
+import Contactsupportlayout from './Admin-User/dashboard/Dashboardlayout/contactsupportlayout/contactsupportlayout'
+import Contactsupport from './Admin-User/Contactsupport/Contactsupport'
+
 
 
 
@@ -32,7 +33,7 @@ const App = () => {
           <Route path='/Distru' element={<Distributionlayout />} />
 
           <Route path='/collections' element={<Collections />} />
-          <Route path='/col' element={<Collectionslayout />} />
+          <Route path='/col' element={<Collectionslayout/>} />
 
           <Route path='/wallet' element={<Wallet />} />
           <Route path='/Wall' element={<Walletlayout />} />
@@ -40,7 +41,7 @@ const App = () => {
           <Route path='/profile' element={<Profile />} />
           <Route path='/Pro' element={<Profilelayout />} />
 
-          <Route path='/contactsupport' element={<Contactsupport />} />
+          <Route path='/contactsupport' element={<Contactsupport/>} />
           <Route path='/Con' element={<Contactsupportlayout/>} />
 
         </Routes>

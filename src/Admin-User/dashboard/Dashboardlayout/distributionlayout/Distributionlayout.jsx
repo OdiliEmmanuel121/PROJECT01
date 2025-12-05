@@ -1,20 +1,17 @@
-import Sidebar from '../../../common/sidebar/Sidebar'
-import Distribution from '../../../distrubution/Distribution'
-import Rightbar from '../../../common/rightbar/RightBar'
-import './Distributionlayout.css'
+
+import Rightbar from "../../../common/rightbar/rightbar"
+import Sidebar from "../../../common/sidebar/Sidebar"
+import Distribution from "../../../distrubution/Distribution"
 
 
-
-
-const distrubutionlayout = () => {
-  return (
-    <div className="distributionLayoutContainer" >distrubutionlayout
-    <Sidebar/>
-    <Distribution/>
-    <Rightbar/>
-    </div>
-    
-  )
+const Distributionlayout = () => {
+    return (
+        <div className="distributionLayoutContainer">
+            <Sidebar />
+            <Distribution />
+            <Rightbar/>
+        </div>
+    )
 }
 
-export default distrubutionlayout
+export default Distributionlayout

@@ -1,11 +1,7 @@
-/*
-  This CSS assumes the Sidebar component is the main container for the sidebar.
-  The styling focuses on creating a fixed or sticky vertical navigation bar.
-*/
 
 .boxContainer {
     /* Define the sidebar's position and size */
-    width: 15%; /* Adjust the width as needed */
+    width: 16%; /* Adjust the width as needed */
     height: 100vh; /* Make it take up the full viewport height */
     position: fixed; /* Keep it fixed in place while the content scrolls */
     top: 0;
@@ -75,6 +71,51 @@
 }
 
 .logoutandIcon h3{
-   color: #4d4f52;
+   color: #da4a56;
    font-family: sans-serif;
+   font-family: sans-serif;
+   font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    
+    /* 1. HIDE THE SIDEBAR OFF-SCREEN BY DEFAULT */
+    .boxContainer {
+        /* Take up most of the width, allowing a small margin */
+        width: 85%; 
+        left: -85%; /* Hide it off-screen (must match the width) */
+        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3); /* Stronger shadow when open */
+        z-index: 50; /* Ensure it overlays content */
+        /* Make sure it scrolls vertically if the content is too long */
+        overflow-y: auto; 
+    }
+
+    /* 2. SLIDE THE SIDEBAR INTO VIEW WHEN THE 'mobile-open' CLASS IS ADDED */
+    .boxContainer.mobile-open {
+        left: 0; /* Brings the menu into the viewport */
+    }
+
+    /* 3. IMPROVE TOUCH TARGETS AND SPACING */
+    
+    .PICTURELOGO {
+        width: 80px; /* Slightly smaller logo */
+        margin: 20px auto 25px auto; /* Adjusted margins */
+    }
+
+    .sidebar .new {
+        padding: 15px 25px; /* Increased vertical padding for better touch targets */
+        font-size: 17px; /* Slightly larger font */
+    }
+    
+    /* 4. FIX LOGOUT SECTION ALIGNMENT */
+    .logoutandIcon {
+        /* Remove desktop alignment fixes */
+        margin-left: 0; 
+        margin-top: 50px; /* Reduced top margin */
+        justify-content: flex-start; /* Align link text to the left */
+        padding: 0 25px; /* Use the same side padding as the links */
+    }
+
+
 }

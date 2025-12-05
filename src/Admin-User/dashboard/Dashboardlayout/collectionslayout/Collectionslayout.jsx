@@ -1,9 +1,10 @@
 import Sidebar from '../../../common/sidebar/Sidebar'
 import Collections from '../../../collection/Collections'
-import Rightbar from '../../../common/rightbar/RightBar'
 import './Collectionslayout.css'
+import Rightbar from '../../../common/rightbar/rightbar'
 
-const collectionslayout = () => {
+
+const Collectionslayout = () => {
     return (
         <div className='collectionslayoutContainer'>collectionslayout
             <Sidebar />
@@ -13,4 +14,4 @@ const collectionslayout = () => {
     )
 }
 
-export default collectionslayout
+export default Collectionslayout

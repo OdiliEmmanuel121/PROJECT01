@@ -1,6 +1,7 @@
+import Rightbar from '../../../common/rightbar/rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
 import Profile from '../../../Profile/Profile'
-import Rightbar from '../../../common/rightbar/RightBar'
+
 import './Profilelayout.css'
 
 
@@ -9,7 +10,7 @@ const Profilelayout = () => {
         <div className='ProfilelayoutContainer'>Profilelayout
             <Sidebar />
             <Profile />
-            <Rightbar />
+           <Rightbar/>
         </div>
     )
 }

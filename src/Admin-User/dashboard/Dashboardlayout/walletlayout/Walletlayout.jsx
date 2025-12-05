@@ -1,10 +1,11 @@
+import Rightbar from '../../../common/rightbar/rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
 import Wallet from '../../../Wallet/Wallet'
-import Rightbar from '../../../common/rightbar/RightBar'
+
 import './WalletLayout.css'
 
 
-const walletlayout = () => {
+const Walletlayout = () => {
   return (
     <div className='WalletLayoutContainer'>walletlayout
     <Sidebar/>
@@ -14,4 +15,4 @@ const walletlayout = () => {
   )
 }
 
-export default walletlayout
+export default Walletlayout

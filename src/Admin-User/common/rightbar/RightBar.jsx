@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 
 
 
-const rightbar = () => {
+const Rightbar = () => {
     // Initialize the count state to 1, as a cart item usually starts at quantity 1.
     const [count, setCount] = useState(1);
 
@@ -74,5 +74,5 @@ const rightbar = () => {
     )
 }
 
-export default rightbar
+export default Rightbar
 

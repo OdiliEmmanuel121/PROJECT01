@@ -1,9 +1,8 @@
 
 import Sidebar from '../../../common/sidebar/Sidebar'
-import Dashboard from "../../Dashboard"
 import Rightbar from '../../../common/rightbar/rightbar'
-
 import './Layout.css'
+import Dashboard from '../../dashboard'
 
 const Layout = () => {
   return (

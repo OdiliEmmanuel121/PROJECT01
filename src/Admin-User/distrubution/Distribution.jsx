@@ -1,11 +1,17 @@
 import './Distribution.css'
 import { AccountCircle, ConnectedTvRounded, ConnectWithoutContact, ConnectWithoutContactSharp, Search, Share, ShoppingBag } from '@mui/icons-material';
 import Box from '@mui/material/Box';
-import distimage5 from '../../assets/distimage5.jpg'
-import distimage2 from '../../assets/distimage2.jpg'
-import distimage4 from '../../assets/distimage4.jpg'
-import distimage6 from '../../assets/distimage6.jpg'
-import distimage9 from '../../assets/distimage9.jpg'
+import damask1 from '../../assets/damask1.jpg'
+import sen6 from  '../../assets/sen6.jpg'
+import vintage8 from '../../assets/vintage8.jpg'
+import sen5 from  '../../assets/sen5.jpg'
+import damask2 from '../../assets/damask2.jpg'
+import sen7 from  '../../assets/sen7.jpg'
+import vintage7 from '../../assets/vintage7.jpg'
+import damask3 from '../../assets/damask3.jpg'
+import sen4 from  '../../assets/sen4.jpg'
+
+
 
 
 const Distribution = () => {
@@ -32,19 +38,39 @@ const Distribution = () => {
       <Box className='DistBoxSection1' sx={{ py: 3 }}>
         <div className='DistcardBox'>
           <div className="Distcard1">
-            <img src={distimage5} alt="Beans and Plantain" className="Distcard-image5" />
+            <img src={damask1} alt="Beans and Plantain" className="Distcard-image5" />
           </div>
         </div>
 
         <div className='DistcardBox'>
           <div className="Distcard2">
-            <img src={distimage2} alt="Beans and Plantain" className="Distcard-image2" />
+            <img src={sen6} alt="Beans and Plantain" className="Distcard-image2" />
           </div>
         </div>
 
         <div className='DistcardBox'>
           <div className="Distcard3">
-            <img src={distimage4} alt="Beans and Plantain" className="Distcard-image4" />
+            <img src={vintage8} alt="Beans and Plantain" className="Distcard-image4" />
+          </div>
+        </div>
+      </Box>
+
+      <Box className='DistBoxSection1' sx={{ py: 3 }}>
+        <div className='DistcardBox'>
+          <div className="Distcard1">
+            <img src={sen5} alt="Beans and Plantain" className="Distcard-image5" />
+          </div>
+        </div>
+
+        <div className='DistcardBox'>
+          <div className="Distcard2">
+            <img src={damask2} alt="Beans and Plantain" className="Distcard-image2" />
+          </div>
+        </div>
+
+        <div className='DistcardBox'>
+          <div className="Distcard3">
+            <img src={sen7} alt="Beans and Plantain" className="Distcard-image4" />
           </div>
         </div>
       </Box>
@@ -52,13 +78,13 @@ const Distribution = () => {
       <Box className='DistBoxSection2' sx={{ py: 3 }}>
         <div className='DistcardBox'>
           <div className="Distcard1">
-            <img src={distimage6} alt="Beans and Plantain" className="Distcard-image6" />
+            <img src={vintage7} alt="Beans and Plantain" className="Distcard-image6" />
           </div>
         </div>
 
         <div className='DistcardBox'>
           <div className="Distcard2">
-            <img src={distimage9} alt="Beans and Plantain" className="Distcard-image9" />
+            <img src={damask3} alt="Beans and Plantain" className="Distcard-image9" />
           </div>
         </div>
       </Box>
